@@ -1,0 +1,31 @@
+/*so i have created a python program to find  the operations on the two chosen numbers.in the start of the program i have used while loop so that the operations will be performed on loop one after the another
+i have then used a choice variable as an input from the user in order to select any one operation from the above ,after this if have used the if-else statement to check if my choice matches the condition then the operation 
+will be performed otherwise it will automatically go in the else block and the program will be ended.for example if my choice is 1 then it will perform the addition operation and provide an output.*/
+
+while True:
+
+    print("1.Addition")
+    print("2.subtraction:")
+    print("3.multiplication:")
+    print("4.division:")
+    print("5.exit")
+
+    choice=int(input("enter a choice:"))
+
+    if choice in(1,2,3,4,5):
+        num1=int(input("enter the first number:"))
+        num2=int(input("enter the second number:"))
+
+        if(choice==1):
+            print("the addition of ",num1,"and",num2,"is",num1+num2)
+        elif(choice==2):
+            print("the subtraction of ",num1,"and",num2,"is",num1-num2)
+        elif(choice==3):
+            print("the multiplication of ",num1,"and",num2,"is",num1*num2)
+        elif(choice==4):
+            print("the division of ",num1,"and",num2,"is",num1/num2)
+    elif(choice==5):
+        break
+    else:
+        print("invalid input")
+            
